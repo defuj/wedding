@@ -1005,7 +1005,7 @@ input.middle:focus {
 }
 
 .component-9 {
-	width: 130%;
+	width: 100%;
 	height: fit-content;
 }
 
@@ -1017,8 +1017,8 @@ input.middle:focus {
 }
 
 .container-info {
-	margin-left: 120px !important;
-	margin-right: 120px !important;
+	/* margin-left: 120px !important;
+	margin-right: 120px !important; */
 	background-color: #fff;
 	border-radius: 16px;
 }
