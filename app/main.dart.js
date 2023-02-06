@@ -74434,7 +74434,7 @@ return A.atO(A.anS(B.P,d,null,b.gl(b)),s)},
 $S:421}
 A.a7V.prototype={
 $3(a,b,c){var s=null,r=this.a
-return"SweetDialogType."+r.k2.b==="SweetDialogType.loading"?A.alx(s,B.A,A.d1(s,A.a0f("assets/animations/loading3.json",150,!0,150),B.q,s,B.xO,150,s,s,s,150),B.q,0,B.a6,s):r},
+return"SweetDialogType."+r.k2.b==="SweetDialogType.loading"?A.alx(s,B.A,A.d1(s,A.a0f("assets/animations/loading2.json",150,!0,150),B.q,s,B.xO,150,s,s,s,150),B.q,0,B.a6,s):r},
 $C:"$3",
 $R:3,
 $S:422}
