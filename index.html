@@ -23,17 +23,32 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <style>
-        /* remove page-break on print */
+        /* print whole page without page-break */
         @media print {
-            /* @page {
-                size: auto;
-                margin: 0mm;
-            } */
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
 
             .page-break {
                 display: none;
             }
         }
+
+        /* remove page-break on print */
+        /* @page {
+            size: auto;
+            margin: 0mm;
+        }
+        @media print {
+
+            .page-break {
+                display: none;
+            }
+        } */
     </style>
 
 </head>
