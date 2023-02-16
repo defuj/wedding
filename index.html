@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico"> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -22,18 +22,40 @@
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <style>
+        /* remove page-break on print */
+        @media print {
+            @page {
+                size: auto;
+                margin: 0mm;
+            }
+
+            body {
+                margin: 0px;
+            }
+
+            .page-break {
+                display: none;
+            }
+
+            .container-fluid {
+                padding: 0px;
+            }
+        }
+    </style>
+
 </head>
 <body class="">
     <main role="main">
         <div class="container-fluid">
             <div class="row d-flex justify-content-center">
                 <div class="col-4 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-start p-0">
-                    <img class="component-1" src="./assets/images/component-1.png" alt="component-1">
+                    <img class="component-1" src="assets/images/component-1.png" alt="component-1">
                 </div>
                 <div
                     class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-column p-3">
-                    <img class="component-user" src="./assets/images/sample.png" alt="sample">
-                    <img class="component-9" src="./assets/images/component-9.png" alt="component-9">
+                    <img class="component-user" src="assets/images/sample.png" alt="sample">
+                    <img class="component-9" src="assets/images/component-9.png" alt="component-9">
                     <p class="bodytext1 my-3 text-center">RSVP is a must/ Wajib Reservasi</p>
                     <a href="./app" rel="noopener noreferrer" class="text-decoration-none">
                         <button class="btn btn-lg background-primary text-white bodytext1 px-4 py-2">RSVP /
@@ -41,14 +63,14 @@
                     </a>
                 </div>
                 <div class="col-4 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-end p-0">
-                    <img class="component-2 " src="./assets/images/component-2.png" alt="component-2">
+                    <img class="component-2 " src="assets/images/component-2.png" alt="component-2">
                 </div>
             </div>
 
             <div class="row container-info mx-3 my-3">
                 <div
                     class="col-1 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-start align-items-end py-2">
-                    <img class="component-7" src="./assets/images/component-7.png" alt="component-7">
+                    <img class="component-7" src="assets/images/component-7.png" alt="component-7">
                 </div>
                 <div
                     class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-column p-3">
@@ -73,13 +95,13 @@
                 </div>
                 <div
                     class="col-1 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-end align-items-top py-2">
-                    <img class="component-8" src="./assets/images/component-8.png" alt="component-8">
+                    <img class="component-8" src="assets/images/component-8.png" alt="component-8">
                 </div>
             </div>
 
             <div class="row d-flex justify-content-center" style="margin-top: 56px;">
                 <div class="col-3 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-start p-0">
-                    <img class="component-1" src="./assets/images/component-3.png" alt="component-3">
+                    <img class="component-1" src="assets/images/component-3.png" alt="component-3">
                 </div>
                 <div
                     class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 d-flex justify-content-center align-items-center flex-column p-0">
@@ -119,7 +141,7 @@
                     </p>
                 </div>
                 <div class="col-3 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-end p-0">
-                    <img class="component-1" src="./assets/images/component-4.png" alt="component-4">
+                    <img class="component-1" src="assets/images/component-4.png" alt="component-4">
                 </div>
             </div>
 
@@ -190,7 +212,7 @@
                 <div class="d-flex justify-content-center align-items-center flex-column container-qr">
                     <button class="btn btn-lg background-primary text-white bodytext1 px-4 py-2">RSVP /
                         Reservasi</button>
-                    <img class="qr mt-3" src="./assets/images/qr.png" alt="QR">
+                    <img class="qr mt-3" src="assets/images/qr.png" alt="QR">
                 </div>
             </div>
 
@@ -198,7 +220,7 @@
                 style="margin-top: 74px;margin-bottom: 84px;">
                 <div
                     class="col-3 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-start align-items-end py-2">
-                    <img class="component-7" src="./assets/images/component-5.png" alt="component-7">
+                    <img class="component-7" src="assets/images/component-5.png" alt="component-7">
                 </div>
                 <div
                     class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-column p-3">
@@ -214,17 +236,17 @@
                         class="d-xl-block d-lg-block d-md-none d-sm-none d-none headline2-1 text-black mb-2 mx-3 text-center">
                         Puti Kayo</p>
 
-                    <p class="d-xl-none d-lg-none d-md-block d-sm-block d-block bodytext1 text-black text-center mx-3"
+                    <!-- <p class="d-xl-none d-lg-none d-md-block d-sm-block d-block bodytext1 text-black text-center mx-3"
                         style="margin-top: 48px;">For Further Information
                     </p>
                     <p class="d-xl-block d-lg-block d-md-none d-sm-none d-none headline5 text-black text-center mx-3"
                         style="margin-top: 48px;">For Further Information
                     </p>
-                    <button class="btn btn-lg background-primary text-white bodytext1 px-4 py-2">Click Here!</button>
+                    <button class="btn btn-lg background-primary text-white bodytext1 px-4 py-2">Click Here!</button> -->
                 </div>
                 <div
                     class="col-3 d-xl-flex d-lg-flex d-md-flex d-sm-none d-none justify-content-end align-items-top py-2">
-                    <img class="component-8" src="./assets/images/component-6.png" alt="component-8">
+                    <img class="component-8" src="assets/images/component-6.png" alt="component-8">
                 </div>
             </div>
         </div>
@@ -240,6 +262,84 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/jspdf.min.js"></script>
+
+    <script type="text/javascript">
+        // run after document ready
+        $(document).ready(function () {
+
+            // var element = document.body;
+            // get element width and height
+            var width = 902;
+            // var height = width * 2.73;
+            var height = 2463;
+            console.log(width, height);
+            var opt = {
+                margin: 0,
+                filename: 'wedding.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, height: height, width: width, windowWidth: width, windowHeight: height },
+                jsPDF: { unit: 'px', format: [width, height], orientation: 'portrait' },
+            };
+            // pdf will download automatically
+            // html2pdf().set(opt).from(element).save();
+
+            // pdf will be generated as base64 string
+            // html2pdf().set(opt).from(element).outputPdf('datauristring').then(function (pdfAsString) {
+            //     console.log(pdfAsString);
+            // });
+            // pdf will be generated in new window/tab
+            // html2pdf().set(opt).from().outputPdf('dataurlnewwindow').then(function (pdfAsString) {
+            //     console.log(pdfAsString);
+            // });
+            html2pdf().set(opt).from().export().then(function (pdfAsString) {
+                console.log(pdfAsString);
+            });
+
+            // fetch template from server
+            // example url: http://domain.com/Mr.Yusup
+            fetch('index.html')
+                .then(function (response) {
+                    switch (response.status) {
+                        // status "OK"
+                        case 200:
+                            return response.text();
+                        // status "Not Found"
+                        case 404:
+                            throw response;
+                    }
+                })
+                .then(function (template) {
+                    console.log(template);
+                    // receive template as string
+                    var element = template.body;
+                    // get element width and height
+                    var width = element.offsetWidth;
+                    var height = element.offsetHeight;
+                    console.log(width, height);
+                    var opt = {
+                        margin: 0,
+                        filename: 'wedding.pdf',
+                        image: { type: 'jpeg', quality: 0.98 },
+                        html2canvas: { scale: 2, height: height, width: width, windowWidth: width, windowHeight: height },
+                        jsPDF: { unit: 'px', format: [width, height], orientation: 'portrait' },
+                    };
+                    // generate pdf from template
+                    html2pdf().set(opt).from(template).outputPdf('datauristring').then(function (pdfAsString) {
+                        console.log(pdfAsString);
+                        // pdfAsString is base64 string of pdf
+                        // you can use it to send to server or download
+                    });
+                })
+                .catch(function (response) {
+                    // "Not Found"
+                    console.log(response.statusText);
+                });
+        });
+    </script>
 
 </body>
 </html>
