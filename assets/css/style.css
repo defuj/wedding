@@ -4,7 +4,9 @@ body {
 
 @media print {
 	* {
-		page-break-before: none;
+		page-break-before: unset;
+		page-break-after: unset;
+		page-break-inside: unset;
 	}
 }
 
