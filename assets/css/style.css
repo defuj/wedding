@@ -2,6 +2,12 @@ body {
 	background-color: #FFF9F5;
 }
 
+@media print {
+	* {
+		page-break-before: none;
+	}
+}
+
 .color-primary {
 	color: #E25D5D !important;
 }
